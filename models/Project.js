@@ -5,7 +5,9 @@ const ProjectSchema = new mongoose.Schema({
     imageURL: [String],
     stack: String,
     description: String,
+    link: String,
 })
 
-module.exports = mongoose.model('Project', ProjectSchema)
+const Project = mongoose.model('Project', ProjectSchema)
 
+module.exports =  Project
